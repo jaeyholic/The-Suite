@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+img {
+  max-width: auto; }
+
+body {
+  background-color: #fff;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 400;
+  line-height: 10px;
+  word-spacing: 3; }
+
+header {
+  background-image: linear-gradient(rgba(30, 89, 254, 0.9), rgba(30, 89, 254, 0.9)), url(../img/hero-background.png);
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  height: 90vh;
+  width: 100vw; }
+
+.left-content {
+  margin-top: 250px; }
+  .left-content h3 {
+    color: #fff;
+    font-weight: 400; }
+
+.right-content img {
+  width: 379px;
+  height: 639px; }

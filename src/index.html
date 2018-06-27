@@ -5,16 +5,136 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
-  <link rel="stylesheet" href="">
-  <title>Document</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500|Ubuntu:400,500,700" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+  <title>The Suite</title>
 </head>
 <body>
  <header>
-   
+  <div class="container">
+    <nav class="navbar">
+      <a class="navbar-brand" href="#">
+        <img src="./img/logo.png" width="90" height="100" class="d-inline-block align-top" alt="">
+        The Suite
+      </a>
+      <div>
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="btn btn-light" href="#">Contact <span class="sr-only">(current)</span></a>
+            </li>
+          </ul>
+        </div>
+    </nav>
+
+    <div class="row">
+      <div class="col-md-7">
+        <div class="left-content">
+          <h3 class="h3">Tech Image Solutions has launched the most comprehensive system for 
+            managing your hotel with Real-time Notifications called </br><strong>THE SUITE</strong></h3>
+        <button class="btn btn-advanced"><a href="#">Free 30days piloting</a></button>
+          </div>
+      </div>
+
+      <div class="col-md-5 d-none d-md-block">
+        <div class="right-content">
+          <img src="./img/iPhoneX.png" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
  </header>
+
+ <section class="features">
+   <div class="container">
+     <h3 class="h3 display-4">The Suite <strong>Features</strong></h3>
+    
+     <div class="row">
+       <div class="col-md-4 text-center">
+         <div class="feature shadow-none p-3 mb-5 bg-light rounded">
+            <img src="./img/svg/booking.svg" alt="">
+            <h4 class="h5">Booking/Reservations System</h4>
+            <p>Collate client/guest information into one place and manage their bookings with ease.</p>
+         </div>
+       </div>
+
+       <div class="col-md-4 text-center">
+          <div class="feature shadow p-3 mb-5 bg-white rounded">
+             <img src="./img/svg/hrm.svg" alt="">
+             <h4 class="h5">Human Resource Manager</h4>
+             <p>Payroll, Payslips, SSNIT, PAYE & other human resource information centralised to make management of information effective and efficient</p>
+          </div>
+        </div>
+
+        <div class="col-md-4 text-center">
+          <div class="feature shadow-none p-3 mb-5 bg-light rounded">
+              <img src="./img/svg/mobile.svg" alt="">
+              <h4 class="h5">Mobile Application Reporting</h4>
+              <p>Simple user-friendly mobile application for managers and business owners to track and monitor various transactions from their mobile devices.</p>
+          </div>
+        </div>
+     </div>
+    </div>
+ </section>
+
+ <section class="inventory">
+   <div class="container">
+     <div class="row">
+       <div class="col-md-6">
+         <div class="inventory-left">
+            <img src="./img/analytics.png" alt="">
+         </div>
+       </div>
+
+       <div class="col-md-6">
+          <div class="inventory-right">
+             <h4 class="h5">Inventory Manager</h4>
+             <p>Manage all supplier information together with the various supplies and inventory of items for all departments</p>
+          </div>
+        </div>
+     </div>
+   </div>
+ </section>
+
+ <section class="restaurant">
+   <div class="container">
+     <div class="row">
+        <div class="col-md-6">
+            <div class="restaurant-left">
+              <h4 class="h5">Restaurant & Bar Manager 
+                + POS</h4>
+              <p>Sales from restaurant & bar made easy to track and control from a simple and 
+                user-friendly interface</p>
+            </div>
+          </div>
+    
+          <div class="col-md-6">
+            <div class="restaurant-right">
+                <img src="./img/restaurant.png" alt="">
+            </div>
+          </div>
+     </div>
+   </div>
+ </section>
+
+ <footer class="footer">
+  <div class="container">
+    <div class="col-md-12 text-center">
+      <p>Contact <strong>0207902151/0245099845</strong> for more information.</p>
+    </div>
+  </div>
+ </footer>
   
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+<script src="js/enter-view.js"></script>
+<script>
+  enterView({
+    selector: 'img',
+    enter: function(el) {
+      el.classList.add('entered')
+    }
+  })
+</script>
 </body>
 </html>

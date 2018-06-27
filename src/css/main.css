@@ -1,17 +1,70 @@
+/*****************************
+  Resets
+*****************************/
 * {
   margin: 0;
   padding: 0; }
 
-img {
-  max-width: auto; }
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  color: #1E59FE; }
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Ubuntu', sans-serif;
+  line-height: 30px; }
+
+a {
+  text-decoration: none; }
 
 body {
   background-color: #fff;
-  font-family: 'Ubuntu', sans-serif;
-  font-weight: 400;
-  line-height: 10px;
+  color: #2c3e50;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  line-height: 20px;
   word-spacing: 3; }
 
+section {
+  margin: 250px 0 80px; }
+
+/*****************************
+  Buttons
+*****************************/
+.btn {
+  background-color: #fff;
+  border: none;
+  padding: 10px 30px;
+  margin-top: 30px;
+  transition: all .2s ease-in-out;
+  color: #1E59FE;
+  font-weight: 500; }
+
+.btn a {
+  color: #EBEBEB;
+  text-decoration: none;
+  padding: 30px; }
+
+.btn:hover {
+  background-color: #EBEBEB;
+  border: none;
+  padding: 10px 30px;
+  color: #1E59FE; }
+
+.navbar-brand {
+  color: #F8F8F8;
+  font-weight: 500;
+  font-size: 200%; }
+
+/*****************************
+  Header
+*****************************/
 header {
   background-image: linear-gradient(rgba(30, 89, 254, 0.9), rgba(30, 89, 254, 0.9)), url(../img/hero-background.png);
   background-size: cover;
@@ -21,11 +74,199 @@ header {
   width: 100vw; }
 
 .left-content {
-  margin-top: 250px; }
+  margin-top: 200px; }
   .left-content h3 {
     color: #fff;
     font-weight: 400; }
+  .left-content .btn {
+    background-color: transparent;
+    border: 1.5px solid #fff;
+    padding: 15px;
+    margin-top: 30px;
+    transition: all .2s ease-in-out;
+    box-shadow: 0.3rem 0.5rem 1rem rgba(0, 0, 0, 0.3); }
+    .left-content .btn a {
+      color: #F8F8F8;
+      text-decoration: none;
+      padding: 30px; }
+    .left-content .btn:hover {
+      background-color: #1E59FE;
+      border: none;
+      padding: 15px;
+      box-shadow: 0.1rem 0.1rem 0.5rem rgba(0, 0, 0, 0.3); }
 
-.right-content img {
-  width: 379px;
-  height: 639px; }
+.right-content {
+  margin-top: 100px; }
+  .right-content img {
+    width: 379px;
+    height: 639px; }
+
+/*****************************
+  Features
+*****************************/
+.features h3 {
+  margin-bottom: 100px;
+  position: relative; }
+  .features h3::after {
+    content: '';
+    position: absolute;
+    border-top: 4px solid #1E59FE;
+    width: 150px;
+    top: 110%;
+    left: 0px; }
+
+.features .feature {
+  cursor: pointer;
+  background-color: #fff;
+  transition: border .5 ease-in;
+  padding: 20px; }
+  .features .feature img {
+    width: 150px;
+    text-align: center;
+    margin-bottom: 50px; }
+  .features .feature h4 {
+    position: relative;
+    margin-bottom: 30px; }
+    .features .feature h4::after {
+      content: '';
+      position: absolute;
+      border-top: 2px solid #1E59FE;
+      width: 50px;
+      top: 130%;
+      left: 110px; }
+
+/*****************************
+  Inventory
+*****************************/
+.inventory {
+  background-color: #EBEBEB;
+  padding-bottom: 50px; }
+  .inventory .inventory-left img {
+    height: 422px;
+    margin-top: -100px; }
+  .inventory .inventory-right {
+    position: relative;
+    margin-top: 50px;
+    margin-left: 50px;
+    padding-left: 150px;
+    padding-top: 50px; }
+    .inventory .inventory-right::after {
+      content: '';
+      background-image: url("../img/svg/dashboard.svg");
+      position: absolute;
+      display: inline-block;
+      background-size: 120px 120px;
+      top: 0;
+      left: 0;
+      width: 120px;
+      height: 120px; }
+    .inventory .inventory-right h4 {
+      position: relative;
+      margin-bottom: 30px; }
+      .inventory .inventory-right h4::after {
+        content: '';
+        position: absolute;
+        border-top: 2px solid #1E59FE;
+        width: 50px;
+        top: 130%;
+        left: 0px; }
+
+/*****************************
+  Restaurant + POS
+*****************************/
+.restaurant {
+  padding-bottom: 50px; }
+  .restaurant .restaurant-right img {
+    width: 600px;
+    height: auto; }
+  .restaurant .restaurant-left {
+    position: relative;
+    margin-left: 50px;
+    padding-left: 150px;
+    margin-top: 100px; }
+    .restaurant .restaurant-left::after {
+      content: '';
+      background-image: url("../img/svg/restaurant.svg");
+      position: absolute;
+      display: inline-block;
+      background-size: 120px 120px;
+      top: 0;
+      left: 0;
+      width: 120px;
+      height: 120px; }
+    .restaurant .restaurant-left h4 {
+      position: relative;
+      margin-bottom: 30px; }
+      .restaurant .restaurant-left h4::after {
+        content: '';
+        position: absolute;
+        border-top: 2px solid #1E59FE;
+        width: 50px;
+        top: 130%;
+        left: 0px; }
+
+/*****************************
+  Footer
+*****************************/
+.footer {
+  background-color: #1E59FE;
+  padding: 50px;
+  color: #fff; }
+
+.entered {
+  -webkit-animation: slide-in-elliptic-top-fwd 1s cubic-bezier(0.445, 0.05, 0.55, 0.95) 500ms both;
+  animation: slide-in-elliptic-top-fwd 1s cubic-bezier(0.445, 0.05, 0.55, 0.95) 500ms both; }
+
+/* ----------------------------------------------
+ * Generated by Animista on 2018-6-27 19:31:18
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+/**
+ * ----------------------------------------
+ * animation slide-in-elliptic-top-fwd
+ * ----------------------------------------
+ */
+@-webkit-keyframes slide-in-elliptic-top-fwd {
+  0% {
+    -webkit-transform: translateY(-600px) rotateX(-30deg) scale(0);
+    transform: translateY(-600px) rotateX(-30deg) scale(0);
+    -webkit-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+    opacity: 0; }
+  100% {
+    -webkit-transform: translateY(0) rotateX(0) scale(1);
+    transform: translateY(0) rotateX(0) scale(1);
+    -webkit-transform-origin: 50% 1400px;
+    transform-origin: 50% 1400px;
+    opacity: 1; } }
+
+@keyframes slide-in-elliptic-top-fwd {
+  0% {
+    -webkit-transform: translateY(-600px) rotateX(-30deg) scale(0);
+    transform: translateY(-600px) rotateX(-30deg) scale(0);
+    -webkit-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+    opacity: 0; }
+  100% {
+    -webkit-transform: translateY(0) rotateX(0) scale(1);
+    transform: translateY(0) rotateX(0) scale(1);
+    -webkit-transform-origin: 50% 1400px;
+    transform-origin: 50% 1400px;
+    opacity: 1; } }
+
+/*****************************
+  Breakpoints
+*****************************/
+@media (max-width: 576px) {
+  .left-content {
+    margin-top: 150px; }
+    .left-content h3 {
+      font-size: 200%; }
+  .inventory-left img {
+    width: 590px;
+    height: auto;
+    margin-top: -100px;
+    margin-left: -50px;
+    overflow-x: hidden; }
+  .restaurant-left {
+    margin-bottom: 50px; } }
